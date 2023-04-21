@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --purple: hsl(259, 100%, 65%);
   --light-red: hsl(0, 100%, 67%);
@@ -9,26 +16,117 @@
   --off-black: hsl(0, 0%, 8%);
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: var(--off-white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: var(--white);
+  padding: 2.0rem;
+  width: 90%;
+  border-radius: 1.6rem 1.6rem 10.0rem 1.6rem;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  margin-bottom: 2.0rem;
+}
+
+label {
+  display: block;
+  color: var(--smokey-grey);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+input {
+  font-size: 2.0rem;
+  padding: 0.5rem 0.2rem;
+  border-radius: 0.4rem;
+  color: var(--off-black);
+  border: 1px solid var(--light-grey);
+}
+
+.division {
+  /* position: relative; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.0rem;
+  margin-bottom: 5.0rem;
+
+
+}
+
+.line {
+  height: 0.1rem;
+  width: 100%;
+  background-color: var(--light-grey);
+  /* display: inline-block; */
+  /* z-index: 0; */
+  /* position: relative; */
+  /* position: absolute; */
+
+}
+
+.arrow {
+  /* position: relative; */
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--purple);
+  /* font-size: 1.2rem; */
+  /* align-items: center; */
+
+}
+
+img {
+  height: 5rem;
+  width: 40%;
+}
+
+.time_past span {
+  color: var(--purple);
+}
+
+.time_past p {
+  font-size: 3.2rem;
+  font-weight: 800;
 }
 
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+/* firefox only*/
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
+  margin-top: 3.0rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

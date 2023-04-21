@@ -15,16 +15,26 @@
 <body>
   <main>
     <form class="form">
-      <label for="day" class="form-label">day</label>
-      <input id="day" type="number" placeholder="DD" min="1" max="31">
-      <label for="month" class="form-label">month</label>
-      <input id="month" type="number" placeholder="MM" min="1" max="12">
-      <label for="year" class="form-label">year</label>
-      <input id="year" type="number" placeholder="YYYY" min="1900" max="2023">
-      <span class="line"></span>
-      <button type="submit"><img class="arrow" src="assets/images/icon-arrow.svg" alt="arrow"></button>
+      <div class="date">
+        <div>
+          <label for="day" class="form-label">day</label>
+          <input id="day" type="number" placeholder="DD" min="1" max="31">
+        </div>
+        <div>
+          <label for="month" class="form-label">month</label>
+          <input id="month" type="number" placeholder="MM" min="1" max="12">
+        </div>
+        <div>
+          <label for="year" class="form-label">year</label>
+          <input id="year" type="number" placeholder="YYYY" min="1900" max="2023">
+        </div>
+      </div>
+      <div class="division">
+        <span class="line"></span>
+        <button class="arrow" type="submit"><img src="assets/images/icon-arrow.svg" alt="arrow"></button>
+      </div>
     </form>
-    <div>
+    <div class="time_past">
       <p><span>--</span> years</p>
       <p><span>--</span> months</p>
       <p><span>--</span> days</p>
