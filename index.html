@@ -16,35 +16,44 @@
   <main>
     <form class="form">
       <div class="date">
-        <div>
+        <div id="dayFamily">
           <label for="day" class="form-label">day</label>
-          <input id="day" type="number" placeholder="DD" min="1" max="31">
+          <input class="input" name="day" id="day" type="number" placeholder="DD" min="1" max="31">
+          <small class="js-error fieldReq dayChange">This field is required</small>
+
+
         </div>
-        <div>
+        <div id="monthFamily">
           <label for="month" class="form-label">month</label>
-          <input id="month" type="number" placeholder="MM" min="1" max="12">
+          <input class="input" name="month" id="month" type="number" placeholder="MM" min="1" max="12">
+          <small class="js-error fieldReq monthChange">This field is required</small>
+
+
         </div>
-        <div>
+        <div id="yearFamily">
           <label for="year" class="form-label">year</label>
-          <input id="year" type="number" placeholder="YYYY" min="1900" max="2023">
+          <input class="input" name="year" id="year" type="number" placeholder="YYYY" min="1900" max="2023">
+          <small class="js-error fieldReq yearChange">This field is required</small>
+
+
         </div>
       </div>
       <div class="division">
         <span class="line"></span>
-        <button class="arrow" type="submit"><img src="assets/images/icon-arrow.svg" alt="arrow"></button>
+        <button class="arrow jsBtn"><img src="assets/images/icon-arrow.svg" alt="arrow"></button>
       </div>
     </form>
     <div class="time_past">
-      <p><span>--</span> years</p>
-      <p><span>--</span> months</p>
-      <p><span>--</span> days</p>
+      <p><span class="result resultYears">--</span> years</p>
+      <p><span class="result resultMonths">--</span> months</p>
+      <p><span class="result resultDays">--</span> days</p>
     </div>
   </main>
 
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/raquel-pe-go/">Raquel Peña</a>.
   </div>
   <script src="main.js"></script>
 </body>
