@@ -16,8 +16,8 @@ const hideWarnings = (children) => {
 
 const validDate = () => {
     let error = false;
-    const inDay = Number(document.getElementById('day').value);
-    const inMonth = Number(document.getElementById('month').value);
+    const inDay = document.getElementById('day').value.padStart(2, '0');
+    const inMonth = document.getElementById('month').value.padStart(2, '0');
     const inYear = Number(document.getElementById('year').value);
     let yearTxt = document.querySelector('.yearChange');
     let dayTxt = document.querySelector('.dayChange');
