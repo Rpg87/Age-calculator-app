@@ -81,6 +81,9 @@ const validDate = () => {
 const daysAlive = (birthdate) => {
     const today = new Date();
     const birthDate = new Date(birthdate);
+
+    birthDate.setHours(0, 0, 0, 0); // Establecer horas, minutos, segundos y milisegundos a cero
+
     let years = today.getFullYear() - birthDate.getFullYear();
     let months = today.getMonth() - birthDate.getMonth();
     let days = today.getDate() - birthDate.getDate();
@@ -88,14 +91,12 @@ const daysAlive = (birthdate) => {
     if (months < 0 || (months === 0 && days < 0)) {
         months += 12;
         years--;
-        console.log(months);
     }
 
     if (days < 0) {
-        months--;
         const numOfDaysInCurrentMonth = new Date(
             birthDate.getFullYear(),
-            birthDate.getMonth(),
+            birthDate.getMonth() + 1,
             0
         ).getDate();
 
@@ -112,7 +113,8 @@ const daysAlive = (birthdate) => {
     };
 
     return age;
-}
+};
+
 
 
 
