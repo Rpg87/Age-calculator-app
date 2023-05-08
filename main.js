@@ -130,7 +130,7 @@ const handlebtn = (e) => {
 
     if (!error) {
         const { days, months, years } = daysAlive(
-            `${inYear}-${inMonth}-${inDay}`
+            `${inMonth}-${inDay}-${inYear}`
         );
 
         totalYears.innerHTML = years;
