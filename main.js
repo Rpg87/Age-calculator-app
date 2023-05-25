@@ -1,4 +1,5 @@
 'use strict';
+
 const btn = document.querySelector('.jsBtn');
 const allInputs = document.querySelectorAll('.input');
 
@@ -34,7 +35,7 @@ const validDate = () => {
             warnings(document.getElementById(name + 'Family').children);
         } else if (name === 'day' && (inDay <= 0 || inDay > 31)) {
             error = true;
-            warnings(document.getElementById(name + 'Family') + (dayTxt.innerHTML = 'Must be a valid day').children);
+            warnings(document.getElementById(name + 'Family').children) + (dayTxt.innerHTML = 'Must be a valid day');
         } else if (name === 'day' && inDay > 30 && (inMonth == 4 || inMonth == 6 || inMonth == 9 || inMonth == 11)) {
             error = true;
             warnings(document.getElementById(name + 'Family').children) + (dayTxt.innerHTML = 'This month only has 30 days')
@@ -58,7 +59,6 @@ const validDate = () => {
         if (name === 'year' && inYear == '') {
             error = true;
             warnings(document.getElementById(name + 'Family').children);
-            console.log('yPrimero');
         } else if (name === 'year' && (inYear.toString().length > 1 && inYear.toString().length < 4)) {
             error = true;
             warnings(document.getElementById(name + 'Family').children) + (yearTxt.innerHTML = 'Opps! I think you miss a number');
@@ -80,9 +80,8 @@ const validDate = () => {
 
 const daysAlive = (birthdate) => {
     const today = new Date();
-    const birthDate = new Date(birthdate);
-
-    birthDate.setHours(0, 0, 0, 0); // Establecer horas, minutos, segundos y milisegundos a cero
+    const [month, day, year] = birthdate.split('-');
+    const birthDate = new Date(`${year}-${month}-${day}T00:00:00`);
 
     let years = today.getFullYear() - birthDate.getFullYear();
     let months = today.getMonth() - birthDate.getMonth();
@@ -115,13 +114,8 @@ const daysAlive = (birthdate) => {
     return age;
 };
 
-
-
-
 const handlebtn = (e) => {
     e.preventDefault();
-    validDate();
-
     const { error, inDay, inMonth, inYear } = validDate();
 
     let totalYears = document.querySelector('.resultYears');
