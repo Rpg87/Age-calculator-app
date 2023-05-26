@@ -42,7 +42,7 @@ Users should be able to:
 <h2 id="demo">
 (⌐■_■) Demo 	</h2>
 
-<img width="500px" src="assets/images/demo.gif"> </img>
+<img width="1000px" src="assets/images/demo.gif"> </img>
 
 ---
 
@@ -52,7 +52,7 @@ I was about to give up, it worked from a computer, from an android phone too, bu
 After researching, sleepless nights and being left without friends for monothematic, I understood that not all devices have the same date format. 
 And that's how the division came into my life.
 
-<img width="500px" src="assets/images/pulgares.png"> </img>
+<img width="800px" src="assets/images/pulgares.png"> </img>
 
 </p>
 
