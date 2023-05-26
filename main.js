@@ -2,6 +2,7 @@
 
 const btn = document.querySelector('.jsBtn');
 const allInputs = document.querySelectorAll('.input');
+const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
 
 const warnings = (children) => {
     children[0].classList.add('error');
@@ -133,7 +134,18 @@ const handlebtn = (e) => {
     }
 
 };
+/*dark mode*/
+document.getElementById('id-sun').onclick = function () {
+    document.getElementById('page').classList.remove('dark-mode')
+    document.getElementById('id-moon').classList.remove('active')
+    this.classList.add('active')
+}
 
+document.getElementById('id-moon').onclick = function () {
+    document.getElementById('page').classList.add('dark-mode')
+    document.getElementById('id-sun').classList.remove('active')
+    this.classList.add('active')
+}
 
 
 btn.addEventListener('click', handlebtn);

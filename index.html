@@ -4,16 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 
   <title>Age calculator app</title>
 </head>
 
-<body>
+<body id="page">
   <main>
+    <div class="container-btn-mode">
+      <div id="id-sun" class="btn-mode sun active">
+        <i class="fas fa-sun"></i>
+      </div>
+      <div id="id-moon" class="btn-mode moon">
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
     <form class="form">
       <div class="date">
         <div id="dayFamily">
@@ -44,9 +51,9 @@
       </div>
     </form>
     <div class="time_past">
-      <p><span class="result resultYears">--</span> years</p>
-      <p><span class="result resultMonths">--</span> months</p>
-      <p><span class="result resultDays">--</span> days</p>
+      <p class="letters"><span class="result resultYears">--</span> years</p>
+      <p class="letters"><span class="result resultMonths">--</span> months</p>
+      <p class="letters"><span class="result resultDays">--</span> days</p>
     </div>
   </main>
 

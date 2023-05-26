@@ -49,10 +49,7 @@ main {
 .yearChange,
 .dayChange {
   display: none;
-  /* display: flex;
-flex-direction: column; */
   max-width: 7.0rem;
-  /* z-index: 0; */
   padding-top: 1.0rem;
   color: var(--light-red);
   font-style: italic;
@@ -85,7 +82,6 @@ input.error {
 
 
 .division {
-  /* position: relative; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -100,22 +96,13 @@ input.error {
   height: 0.1rem;
   width: 100%;
   background-color: var(--light-grey);
-  /* display: inline-block; */
-  /* z-index: 0; */
-  /* position: relative; */
-  /* position: absolute; */
-
 }
 
 .arrow {
-  /* position: relative; */
   position: absolute;
   border: none;
   border-radius: 50%;
   background-color: var(--purple);
-  /* font-size: 1.2rem; */
-  /* align-items: center; */
-
 }
 
 img {
@@ -141,27 +128,113 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-
-/* firefox only*/
-/* input[type="number"] {
-  -moz-appearance: textfield;
-} */
-
 .attribution {
   margin-top: 3.0rem;
   font-size: 1.1rem;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--purple);
+}
+
+/* Dark Mode */
+
+.container-btn-mode {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 0;
+}
+
+.btn-mode {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  border: 2px solid black;
+  transition: background-color .5s;
+}
+
+.btn-mode i {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.btn-mode.sun {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid transparent;
+}
+
+.btn-mode.moon {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.active {
+  background-color: black;
+  color: #ffcd5c !important;
+}
+
+.dark-mode {
+  background-color: #0e0e0e;
+  transition: background-color .5s;
+}
+
+.dark-mode main {
+  background-color: #282a2b;
+}
+
+.dark-mode .form-label,
+.dark-mode .attribution,
+.dark-mode .letters {
+  color: white;
+}
+
+.dark-mode .result {
+  color: hsl(150, 64%, 53%);
+}
+
+.dark-mode .arrow {
+  background-color: hsl(150, 64%, 53%);
+}
+
+.dark-mode .attribution a {
+  color: hsl(150, 64%, 53%);
 }
 
 /* media */
 
+@media screen and (min-width: 850px) and (max-width: 1439px) {
+  main {
+    margin: 3.5rem;
+    width: 40vw;
+  }
+
+  label {
+    font-size: 2.0rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .division {
+    justify-content: flex-end;
+  }
+
+  .time_past p {
+    font-size: 5.2rem;
+    line-height: 6.8rem;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   main {
     margin: 3.5rem;
+    width: 40vw;
   }
 
   .date {
@@ -175,7 +248,20 @@ input[type=number]::-webkit-outer-spin-button {
 
   input {
     font-size: 3.2rem;
-    padding: 1.5rem 7.5rem 1.5rem 2.8rem;
+    padding: 1.5rem 2.5rem 1.5rem 2.8rem;
     font-weight: 800;
+  }
+
+  .result {
+    letter-spacing: 1.5rem;
+  }
+
+  .time_past p {
+    font-size: 6.2rem;
+    line-height: 6.8rem;
+  }
+
+  .division {
+    justify-content: flex-end;
   }
 }
