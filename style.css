@@ -105,6 +105,24 @@ input.error {
   background-color: var(--purple);
 }
 
+.arrow:active {
+  box-shadow: 0 5px #942571cb;
+  transform: translateY(2px);
+}
+
+.dark-mode .arrow:active {
+  box-shadow: 0 5px #873AD4;
+  transform: translateY(2px);
+}
+
+
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+
 img {
   height: 5rem;
   width: 40%;

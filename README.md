@@ -10,7 +10,7 @@ Frontend Mentor challenges help you to improve your coding skills by creating re
 
 - [Overview](#overview)
   - [The challenge](#challenge)
-  - [How it looks](#looks)
+  - [Demo](#demo)
   - [Link](#link)
 - [My process](#process)
   - [Built with](#built)
@@ -28,7 +28,7 @@ Frontend Mentor challenges help you to improve your coding skills by creating re
 ---
 
 <h2 id="Overview">Overview 💻</h2>
-<br></br>
+<br>
 <h2 id="challenge"> (ﾉ´ヮ`)ﾉ*: ･ﾟ The challenge</h2>
 
 Users should be able to:
@@ -45,6 +45,13 @@ Users should be able to:
 
 ---
 
+<h2 id="demo">
+w(°ｏ°)w Demo 	</h2>
+
+<img width="500px" src="assets/images/demo.gif"> </img>
+
+---
+
 <h2 id="extras"> Extras ❕❕	</h2>
 <br>
 
@@ -57,9 +64,9 @@ Users should be able to:
 
 <h2 id="hardest">(╬ Ò﹏Ó) The hardest part </h2>
 <p align="justify">
-I was about to give up, if I accessed from a computer, it worked, from an android phone it worked, but when I accessed from an Iphone, it did not work. 
+I was about to give up, it worked from a computer, from an android phone too, but when I tried it from an Iphone, it didn't work. 
 After researching, sleepless nights and being left without friends for monothematic, I understood that not all devices have the same date format. 
-And that's how Slipt came into my life.
+And that's how the division came into my life.
 
 <img width="500px" src="assets/images/pulgares.png"> </img>
 
