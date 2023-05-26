@@ -11,14 +11,8 @@ Frontend Mentor challenges help you to improve your coding skills by creating re
 - [Overview](#overview)
   - [The challenge](#challenge)
   - [Demo](#demo)
-  - [Link](#link)
 - [My process](#process)
   - [Built with](#built)
-  - [What I learned and reviewed](#learned)
-  - [Continued development](#continued)
-  - [Useful resources](#useful)
-- [Extras](#extras)
-  - [Dark Mode](#dark)
   - [The hardest part](#hardest)
   - [What you need to make it yours](#make-it-yours)
 - [Who is Raquel](#who)
@@ -27,7 +21,7 @@ Frontend Mentor challenges help you to improve your coding skills by creating re
 
 ---
 
-<h2 id="Overview">Overview 💻</h2>
+<h2 align="center" id="Overview">Overview 💻</h2>
 <br>
 <h2 id="challenge"> (ﾉ´ヮ`)ﾉ*: ･ﾟ The challenge</h2>
 
@@ -46,19 +40,9 @@ Users should be able to:
 ---
 
 <h2 id="demo">
-w(°ｏ°)w Demo 	</h2>
+(⌐■_■) Demo 	</h2>
 
 <img width="500px" src="assets/images/demo.gif"> </img>
-
----
-
-<h2 id="extras"> Extras ❕❕	</h2>
-<br>
-
-<h2 id="dark"> (⌐■_■) Dark Mode </h2>
-<br>
-
-<img width="500px" src="assets/images/darkMode.gif"> </img>
 
 ---
 
@@ -81,7 +65,7 @@ It is made with HTML, Css and Javascript so you don't need anything special. You
 
 </p>
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <h2 id="who"> (≧▽≦)/    Who is Raquel</h2>
 <p align= "justify">
@@ -89,7 +73,7 @@ It is made with HTML, Css and Javascript so you don't need anything special. You
 
 If you want to know more about me or if you have a fun project and you need help we could work together, you can find me [here](https://www.linkedin.com/in/raquel-pe-go/)
 
----
+![---](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <h2 align= "center">If you have made it this far, I thank you and wish you a <strong> happy day</strong>. 	</h2>
 <h2 align= "center">(⊃｡•́‿•̀｡)⊃
