@@ -82,9 +82,8 @@ const validDate = () => {
 const daysAlive = (birthdate) => {
     const today = new Date();
     const [month, day, year] = birthdate.split('-');
-    // const birthDate = new Date(`${year}-${month}-${day}T00:00:00`);
-    const birthDate = new Date(`${year}-${month}-${day}`);
-    console.log(birthDate)
+    const birthDate = new Date(`${year}-${month}-${day}T00:00:00`);
+
 
     let years = today.getFullYear() - birthDate.getFullYear();
     let months = today.getMonth() - birthDate.getMonth();

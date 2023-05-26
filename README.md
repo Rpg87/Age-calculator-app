@@ -54,6 +54,7 @@ If you want to know more about me or if you have a fun project and you need help
 <h2 align= "center">If you have made it this far, I thank you and wish you a <strong> happy day</strong>. 	</h2>
 <h2 align= "center">(⊃｡•́‿•̀｡)⊃
 </h2>
+
 ---
 
 ### [Back to the top](#table-of-contents) ⥉
